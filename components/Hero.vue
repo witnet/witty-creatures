@@ -3,7 +3,7 @@
     <img
       class="header"
       src="@/assets/svg/wittycreatures-website-header.svg"
-      alt="Witty creatures"
+      alt="Witty Creatures"
     />
     <i18n tag="p" path="hero.text" class="text">
       <span class="eth">{{ $t('hero.eth') }}</span>
@@ -27,8 +27,9 @@
   }
 
   .text {
-    max-width: 45vw;
-    margin-top: 24px;
+    width: 600px;
+    max-width: 80vw;
+    margin-top: 40px;
     font-size: 24px;
     color: #f8971e;
     font-family: 'Ocra ext', sans-serif;
