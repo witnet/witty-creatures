@@ -1,5 +1,5 @@
 <template>
-  <div class="background">
+  <div>
     <Nuxt />
   </div>
 </template>
@@ -23,7 +23,6 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   background: white;
-  background-size: cover;
 }
 
 html,

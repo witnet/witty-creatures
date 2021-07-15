@@ -7,6 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "i18n:report": "yarn run vue-i18n-extract use-config",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore . --fix",
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore --fix",
     "lint": "yarn lint:js && yarn lint:style"
@@ -16,10 +17,8 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "add": "^2.0.6",
     "core-js": "^3.8.3",
-    "lightweight-charts": "^3.3.0",
     "nuxt": "^2.14.12",
     "nuxt-i18n": "^6.20.2",
-    "vue-select": "^3.11.2",
     "yarn": "^1.22.10"
   },
   "devDependencies": {
@@ -41,6 +40,7 @@
     "prettier": "^2.2.1",
     "stylelint": "^13.9.0",
     "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-standard": "^20.0.0",
+    "vue-i18n-extract": "^1.2.3"
   }
 }

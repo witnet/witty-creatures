@@ -9,7 +9,7 @@ export default {
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'new-website',
+    title: 'Witty creatures',
     htmlAttrs: {
       lang: 'en',
     },
@@ -89,7 +89,11 @@ export default {
     ],
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/styles/colors.scss', '~/assets/styles/main.scss'],
+  css: [
+    '~/assets/styles/colors.scss',
+    '~/assets/styles/main.scss',
+    '~/assets/fonts/style.css',
+  ],
   // You will have to add this new object if it doesn't exist already
   styleResources: {
     scss: ['~/assets/styles/colors.scss', '~/assets/styles/main.scss'],
@@ -98,13 +102,7 @@ export default {
   modules: ['@nuxtjs/style-resources', '@nuxt/content', 'nuxt-i18n'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    { src: '~/plugins/vueSelect.js', ssr: false },
-    {
-      src: '~/plugins/lightweightcharts.js',
-      ssr: false,
-    },
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: {

@@ -1,9 +1,62 @@
 {
-    "hero": {
-        "title": "Lorem ipsum dolor",
-        "text": {
-            "main": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. {0}, quis nostrud.",
-            "highlight": "Ut enim ad minim veniam"
-        }
-    }
+  "hero": {
+    "text": "Collect the 12 different crypto cards and earn up to {0} worth of prices!",
+    "eth": "5 ETH"
+  },
+  "content": {
+    "announcements": "ANNOUNCEMENTS",
+    "prices": "PRICES",
+    "how_to_play": "HOW TO PLAY",
+    "get_your_first_creatures": "GET YOUR FIRST 3 WITTY CREATURES",
+    "get_rest_witty_creatures": "HOW TO GET THE WITTY CREATURES THAT YOU ARE MISSING",
+    "what_is_witnet": "WHAT IS WITNET",
+    "anouncements_date_1": "",
+    "anouncements_date_1_text": "",
+    "anouncements_date_2": "",
+    "anouncements_date_2_text": "",
+    "instruction_1_0": "",
+    "instruction_2_0": "",
+    "instruction_3_0": "",
+    "instruction_4_0": "",
+    "instruction_5_0": "",
+    "instruction_5_1": "",
+    "instruction_6_0": "",
+    "instruction_6_1": "",
+    "instruction_7_0": "",
+    "instruction_7_1": "",
+    "instruction_7_2": "",
+    "instruction_8_0": "",
+    "instruction_8_1": "",
+    "instruction_8_2": "",
+    "instruction_9_0": "",
+    "instruction_10_0": "",
+    "instruction_11_0": "",
+    "instruction_12_0": "",
+    "instruction_13_0": "",
+    "get_first_creatures_text": "",
+    "get_rest_witty_creatures_1_0": "",
+    "get_rest_witty_creatures_2_0": "",
+    "get_rest_witty_creatures_3_0": "",
+    "what_is_witnet_text": "",
+    "instruction_1": "",
+    "instruction_2": "",
+    "instruction_3": "",
+    "instruction_4": "",
+    "instruction_5": "",
+    "instruction_6": "",
+    "instruction_7": "",
+    "instruction_8": "",
+    "instruction_9": "",
+    "instruction_10": "",
+    "instruction_11": "",
+    "instruction_12": "",
+    "instruction_13": "",
+    "get_rest_witty_creatures_1": "",
+    "get_rest_witty_creatures_2": "",
+    "get_rest_witty_creatures_3": ""
+  },
+  "price": {
+    "eth_unclaimed": "",
+    "wit_unclaimed": ""
+  }
 }

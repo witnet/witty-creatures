@@ -1,75 +1,47 @@
 <template>
   <div class="section">
-    <div class="main">
-      <!-- <Select
-        :options="options"
-        :default-option="selected"
-        @update-selected="updateSelected"
-      /> -->
-      <h1>
-        <span class="text">{{ $t('hero.title') }}</span>
-      </h1>
-      <p>
-        <i18n class="text" path="hero.text.main" tag="span">
-          <span class="highlight">{{ $t('hero.text.highlight') }}</span>
-        </i18n>
-      </p>
-    </div>
+    <img
+      class="header"
+      src="@/assets/svg/wittycreatures-website-header.svg"
+      alt="Witty creatures"
+    />
+    <i18n tag="p" path="hero.text" class="text">
+      <span class="eth">{{ $t('hero.eth') }}</span>
+    </i18n>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      options: [
-        { label: 'All' },
-        { label: 'Rinkeby' },
-        { label: 'Goerly' },
-        { label: 'Mainnet' },
-      ],
-      selected: { label: 'All' },
-    }
-  },
-  methods: {
-    updateSelected(selectedOption) {
-      this.selected = selectedOption
-    },
-  },
-}
-</script>
-
 <style lang="scss" scoped>
 .section {
-  color: $dark-blue;
-  padding: 0 180px;
-  min-height: 100vh;
+  background: $black;
+  padding: 50px 24px;
+  padding-bottom: 8vw;
   display: grid;
-  grid-template-rows: max-content 1fr;
-  grid-template-columns: 1fr;
+  grid-template: max-content max-content/ 1fr;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+  .header {
+    max-width: 80vw;
+  }
 
-  .main {
-    margin-top: 15vh;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    max-width: 40vw;
-    justify-self: center;
-  }
   .text {
-    line-height: 1.5;
-  }
-  .highlight {
-    color: $red;
-  }
-}
-@media (max-width: 1200px) {
-  .section {
-    padding: 0 0;
-    .main {
-      max-width: 100%;
-      padding: 40px 40px;
+    max-width: 45vw;
+    margin-top: 24px;
+    font-size: 24px;
+    color: #f8971e;
+    font-family: 'Ocra ext', sans-serif;
+    .eth {
+      font-family: 'Ocra ext', sans-serif;
+      font-size: 24px;
+      color: white;
     }
   }
 }
+// @media (max-width: 1200px) {
+//   .section {
+//     padding: 0 0;
+//   }
+// }
 </style>
