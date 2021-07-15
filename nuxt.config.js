@@ -9,33 +9,35 @@ export default {
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Witty creatures',
+    title: '#WittyCreatures by Witnet - Play with us at EthCC[4]',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'theme-color', content: '#0094a8' },
+      { name: 'theme-color', content: '#000000' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'title',
         name: 'title',
-        content: 'title',
+        content: '#WittyCreatures by Witnet - Play with us at EthCC[4]',
       },
       {
         hid: 'description',
         name: 'description',
-        content: 'description',
+        content:
+          'Collect the 12 different crypto cards and earn up to 5 ETH worth of prices!',
       },
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'title',
+        content: '#WittyCreatures by Witnet - Play with us at EthCC[4]',
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'description',
+        content:
+          'Collect the 12 different crypto cards and earn up to 5 ETH worth of prices!',
       },
       {
         hid: 'twitter:image',
@@ -45,17 +47,18 @@ export default {
       {
         hid: 'twitter:image:alt',
         name: 'twitter:image:alt',
-        content: 'alt',
+        content: '#WittyCreatures by Witnet',
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'title',
+        content: '#WittyCreatures by Witnet - Play with us at EthCC[4]',
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'description',
+        content:
+          'Collect the 12 different crypto cards and earn up to 5 ETH worth of prices!',
       },
       {
         hid: 'og:image',
@@ -70,7 +73,7 @@ export default {
       {
         hid: 'og:image:alt',
         property: 'og:image:alt',
-        content: 'EXAMPLE',
+        content: '#WittyCreatures by Witnet',
       },
     ],
     link: [
