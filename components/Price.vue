@@ -11,7 +11,11 @@
       target="_blank"
     >
       {{
-        ethClaimed == null ? $t('price.checking') : $t('price.eth_unclaimed')
+        ethClaimed == null
+          ? $t('price.checking')
+          : ethClaimed
+          ? $t('price.eth_claimed')
+          : $t('price.eth_unclaimed')
       }}
     </a>
     <a
