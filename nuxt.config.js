@@ -42,7 +42,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: '/',
+        content: '/social-image.png',
       },
       {
         hid: 'twitter:image:alt',
@@ -63,12 +63,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/',
-      },
-      {
-        hid: 'og:image:secure_url',
-        property: 'og:image:secure_url',
-        content: '/',
+        content: '/social-image.png',
       },
       {
         hid: 'og:image:alt',
@@ -77,7 +72,27 @@ export default {
       },
     ],
     link: [
+      {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/apple-touch-icon.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/favicon-32x32.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/favicon-16x16.png',
+      },
+      { rel: 'manifest', href: '/site.webmanifest' },
+      { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#f8971e' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'msapplication-TileColor', content: '#f8971e' },
       { rel: 'shortcut icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
