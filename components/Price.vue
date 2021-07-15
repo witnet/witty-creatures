@@ -4,12 +4,24 @@
     <h3 class="title">
       {{ title }}
     </h3>
-    <div class="claimed" :class="{ ['eth-highlight']: ethClaimed }">
-      {{ $t('price.eth_unclaimed') }}
-    </div>
-    <div class="claimed" :class="{ ['wit-highlight']: witClaimed }">
-      {{ $t('price.wit_unclaimed') }}
-    </div>
+    <a
+      class="claimed"
+      :class="{ ['eth-highlight']: ethClaimed }"
+      :href="'https://etherscan.io/address/' + ethAddress"
+      target="_blank"
+    >
+      {{
+        ethClaimed == null ? $t('price.checking') : $t('price.eth_unclaimed')
+      }}
+    </a>
+    <a
+      class="claimed"
+      :class="{ ['wit-highlight']: witClaimed }"
+      :href="'https://witnet.network/search/' + witAddress"
+      target="_blank"
+    >
+      {{ $t('price.check_manually') }}
+    </a>
   </div>
 </template>
 
@@ -20,13 +32,21 @@ export default {
       type: String,
       required: true,
     },
+    ethAddress: {
+      type: String,
+      required: true,
+    },
     ethClaimed: {
       type: Boolean,
+      required: false,
+    },
+    witAddress: {
+      type: String,
       required: true,
     },
     witClaimed: {
       type: Boolean,
-      required: true,
+      required: false,
     },
     img: {
       type: String,

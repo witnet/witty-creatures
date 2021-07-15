@@ -5,12 +5,12 @@
   },
   "content": {
     "announcements": "ANNOUNCEMENTS",
-    "prices": "PRICES",
+    "prices": "PRIZES",
     "how_to_play": "HOW TO PLAY",
     "get_your_first_creatures": "GET YOUR FIRST 3 WITTY CREATURES",
     "get_rest_witty_creatures": "HOW TO GET THE WITTY CREATURES THAT YOU ARE MISSING",
     "what_is_witnet": "WHAT IS WITNET",
-    "anouncements_date_1": "JUL 10 @ 9.27",
+    "anouncements_date_1": "JUL 20 @ 9.27",
     "anouncements_date_1_text": "Come to our booth at Level-1 to get your first 3 witty creatures",
     "anouncements_date_2": "JUL 20 @ 9.00",
     "anouncements_date_2_text": "The game has begun",
@@ -57,9 +57,11 @@
     "get_rest_witty_creatures_3": "- Sadly, the COVID-19 pandemics is not over. {0}. The cards can be easily cleaned with hydroalcoholic gel or washed with regular hand soap and rinsed with water."
   },
   "price": {
-    "eth_unclaimed": "ETH unclaimed",
-    "wit_unclaimed": "WIT unclaimed",
-    "eth_claimed": "ETH claimed",
-    "wit_claimed": "WIT claimed"
+    "eth_unclaimed": "ETH: unclaimed",
+    "wit_unclaimed": "WIT: unclaimed",
+    "eth_claimed": "ETH: claimed",
+    "wit_claimed": "WIT: claimed",
+    "checking": "Checking...",
+    "check_manually": "WIT: Check in explorer"
   }
 }
