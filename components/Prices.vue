@@ -99,9 +99,16 @@ export default {
     pollOnchainData() {
       const poll = () => {
         for (const prize of this.prizes) {
-          web3.eth.getBalance(prize.ethAddress).then((balance) => {
-            prize.ethClaimed = balance === '0'
-          })
+          web3.eth
+            .getBalance(prize.ethAddress)
+            .then((balance) => {
+              prize.ethClaimed = balance === '0'
+            })
+            .catch(async (e) => {
+              // Just to deal with random Web3 failures
+              console.error('Retrying after error', e)
+              prize.ethClaimed = await web3.eth.getBalance(prize.ethAddress)
+            })
         }
       }
       this.polling = setInterval(poll, 90000)
