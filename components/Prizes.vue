@@ -120,12 +120,12 @@ export default {
 
 <style>
 .border {
-  padding: 24px;
-  border: 1px solid black;
+  padding: 15px;
+  border: 1px solid #f8971e;
   border-radius: 4px;
   display: grid;
   grid-template: 1fr / repeat(auto-fit, max-content);
   justify-items: flex-start;
-  grid-gap: 16px;
+  grid-gap: 10px;
 }
 </style>

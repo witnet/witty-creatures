@@ -72,12 +72,16 @@ export default {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
   .title {
     font-size: 18px;
-    margin-right: 16px;
+    margin-right: 24px;
   }
   .prize-icon {
     margin-right: 16px;
+    height: 1.5em;
   }
   .claimed {
     padding: 8px;
@@ -85,7 +89,7 @@ export default {
     background-color: grey;
     color: white;
     font-weight: bold;
-    margin-right: 16px;
+    margin-right: 10px;
     &:last-of-type {
       margin-right: 0;
     }
