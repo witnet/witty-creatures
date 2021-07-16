@@ -150,7 +150,7 @@
   flex-direction: column;
   .announcements {
     display: grid;
-    grid-template: max-content max-content/ max-content max-content;
+    grid-template: max-content 1fr / max-content 1fr;
     grid-gap: 16px;
   }
   .text,
