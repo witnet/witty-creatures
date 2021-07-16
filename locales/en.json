@@ -1,11 +1,11 @@
 {
   "hero": {
-    "text": "Collect the 12 different crypto cards and earn up to {0} worth of prices!",
+    "text": "Collect the 12 different crypto cards and earn up to {0} worth of prizes!",
     "eth": "5 ETH"
   },
   "content": {
     "announcements": "ANNOUNCEMENTS",
-    "prices": "PRIZES",
+    "prizes": "PRIZES",
     "how_to_play": "HOW TO PLAY",
     "get_your_first_creatures": "GET YOUR FIRST 3 WITTY CREATURES",
     "get_rest_witty_creatures": "HOW TO GET THE WITTY CREATURES THAT YOU ARE MISSING",
@@ -37,7 +37,7 @@
     "get_rest_witty_creatures_1_0": "HOLDing will not help",
     "get_rest_witty_creatures_2_0": "#WittyCreatures",
     "get_rest_witty_creatures_3_0": "When exchanging cards with other players, please apply reasonable social distancing and higiene measures",
-    "what_is_witnet_text": "Just as this game brings NFTs to the physical world, the Witnet decentralized oracle network brings all kind of data from the real world to the Jblockchain world without compromising the data integrity and trustlessness of the consumer smart contracts. +Info at {0}",
+    "what_is_witnet_text": "Just as this game brings NFTs to the physical world, the Witnet decentralized oracle network brings all kind of data from the real world to the blockchain world without compromising the data integrity and trustlessness of the consumer smart contracts. +Info at {0}",
     "what_is_witnet_text_0": "https://witnet.io",
     "instruction_1": "{0} This is an off-chain {1} - the precursors of NFTs.",
     "instruction_2": "{0} There are {1} of premium, gold plated PCB cards in the game.",
@@ -47,16 +47,24 @@
     "instruction_6": "{0} These backup phrases unlock {1} with generous prizes deposited on them.",
     "instruction_7": "{0} These words can also be loaded into the {1} app ({2}) to receive additional prizes in {3}.",
     "instruction_8": "{0} There are 3 bronze prizes ({1} each), 2 silver prizes ({2} each) and 1 gold prize ({3}).",
-    "instruction_9": "{0} If you want to discover all the 36 secret words in the game, {1} - you will need to exange them with other players.",
+    "instruction_9": "{0} If you want to discover all the 36 secret words in the game, {1} - you will need to exchange them with other players.",
     "instruction_10": "{0} Use the {1} below to write down the secret words found in each of the cards that you collect.",
-    "instruction_11": "{0} To reconstruct the backup secret phrases from the individual words and claim the prices, simply follow the {1} below.",
+    "instruction_11": "{0} To reconstruct the backup secret phrases from the individual words and claim the prizes, simply follow the {1} below.",
     "instruction_12": "{0} As soon as you have collected {1} needed for a prize, make sure to load them into your favorite wallet software and transfer all the available balance to your own Ethereum or Witnet wallet.",
     "instruction_13": "{0} You can track which prizes have been taken and which are still standing.",
     "get_rest_witty_creatures_1": "- This time around, {0}. You will initially be given only 3 crypto creatures, so if you want to be the first to catch em'all and win one of the prizes, you'd better find other players and exchange your cards with them.",
     "get_rest_witty_creatures_2": "- Use {0} hashtag in Twitter to easily find other players and to publish your creature exchange offers.",
     "get_rest_witty_creatures_3": "- Sadly, the COVID-19 pandemics is not over. {0}. The cards can be easily cleaned with hydroalcoholic gel or washed with regular hand soap and rinsed with water."
   },
-  "price": {
+  "prizes": {
+    "gold_prize": "GOLD [1ETH+40K WIT]",
+    "silver_prize_1": "SILVER 1 [0.5ETH+20K WIT]",
+    "silver_prize_2": "SILVER 2 [0.5ETH+20K WIT]",
+    "bronze_prize_1": "BRONZE 1 [0.25ETH+10K WIT]",
+    "bronze_prize_2": "BRONZE 2 [0.25ETH+10K WIT]",
+    "bronze_prize_3": "BRONZE 3 [0.25ETH+10K WIT]"
+  },
+  "prize": {
     "eth_unclaimed": "ETH: unclaimed",
     "wit_unclaimed": "WIT: unclaimed",
     "eth_claimed": "ETH: claimed",

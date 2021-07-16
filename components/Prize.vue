@@ -1,6 +1,6 @@
 <template>
-  <div class="price">
-    <img class="price-icon" :src="url" alt="Price" />
+  <div class="prize">
+    <img class="prize-icon" :src="url" alt="prize" />
     <h3 class="title">
       {{ title }}
     </h3>
@@ -12,10 +12,10 @@
     >
       {{
         ethClaimed == null
-          ? $t('price.checking')
+          ? $t('prize.checking')
           : ethClaimed
-          ? $t('price.eth_claimed')
-          : $t('price.eth_unclaimed')
+          ? $t('prize.eth_claimed')
+          : $t('prize.eth_unclaimed')
       }}
     </a>
     <a
@@ -24,7 +24,7 @@
       :href="'https://witnet.network/search/' + witAddress"
       target="_blank"
     >
-      {{ $t('price.check_manually') }}
+      {{ $t('prize.check_manually') }}
     </a>
   </div>
 </template>
@@ -66,27 +66,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.price {
-  display: grid;
+.prize {
+  display: flex;
   width: 100%;
-  grid-template-columns: repeat(4, max-content);
-  grid-gap: 24px;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   .title {
-    width: max-content;
     font-size: 18px;
+    margin-right: 16px;
   }
-  .price-icon {
-    width: max-content;
+  .prize-icon {
+    margin-right: 16px;
   }
   .claimed {
-    width: max-content;
     padding: 8px;
     border-radius: 4px;
     background-color: grey;
     color: white;
     font-weight: bold;
+    margin-right: 16px;
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
   .eth-highlight {
     background-color: #7825ff;
@@ -96,13 +98,19 @@ export default {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .price {
-    grid-template-columns: repeat(2, max-content);
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 1200px) {
+  .prize {
     .title {
-      grid-column: 1 / span 2;
+      margin-top: 16px;
+    }
+    .prize-icon {
+      margin-top: 16px;
+    }
+    .claimed {
+      margin-top: 16px;
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
   }
 }

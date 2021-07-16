@@ -26,7 +26,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Collect the 12 different crypto cards and earn up to 5 ETH worth of prices!',
+          'Collect the 12 different crypto cards and earn up to 5 ETH worth of prizes!',
       },
       {
         hid: 'twitter:title',
@@ -37,7 +37,7 @@ export default {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'Collect the 12 different crypto cards and earn up to 5 ETH worth of prices!',
+          'Collect the 12 different crypto cards and earn up to 5 ETH worth of prizes!',
       },
       {
         hid: 'twitter:image',
@@ -58,7 +58,7 @@ export default {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'Collect the 12 different crypto cards and earn up to 5 ETH worth of prices!',
+          'Collect the 12 different crypto cards and earn up to 5 ETH worth of prizes!',
       },
       {
         hid: 'og:image',
@@ -153,7 +153,7 @@ export default {
       fallbackLocale,
       messages: {
         en: require('./locales/en.json'),
-        es: require('./locales/es.json'),
+        // es: require('./locales/es.json'),
       },
     },
     detectBrowserLanguage: {

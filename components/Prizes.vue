@@ -1,6 +1,6 @@
 <template>
   <div class="border">
-    <Price
+    <prize
       v-for="prize in prizes"
       :key="prize.id"
       :title="prize.title"
@@ -34,8 +34,8 @@ export default {
       prizes: [
         {
           id: 1,
-          title: 'GOLD [1ETH+40K WIT]',
-          img: 'gold-price',
+          title: this.$t('prizes.gold_prize'),
+          img: 'gold-prize',
           ethAddress: '0x8F63eF3441121f7D90ceF8c642EFA3069747C29D',
           ethClaimed: null,
           witAddress: 'wit1tzuypmyj6f0ugggl3l6r7g2dl0q74al7t2mnax',
@@ -43,8 +43,8 @@ export default {
         },
         {
           id: 2,
-          title: 'SILVER 1 [0.5ETH+20K WIT]',
-          img: 'silver-price',
+          title: this.$t('prizes.silver_prize_1'),
+          img: 'silver-prize',
           ethAddress: '0xCc340459eEc3FA8DccE461918ab1a02Cb11c7C59',
           ethClaimed: null,
           witAddress: 'wit17sygcjkrg0dqvpwpwqd0lqduxarh3ut5s0yxna',
@@ -52,8 +52,8 @@ export default {
         },
         {
           id: 3,
-          title: 'SILVER 2 [0.5ETH+20K WIT]',
-          img: 'silver-price',
+          title: this.$t('prizes.silver_prize_2'),
+          img: 'silver-prize',
           ethAddress: '0x15E3924f6dff394759270B8e82248eD262764fCd',
           ethClaimed: null,
           witAddress: 'wit1zcx5lwe6m2vtk0ehkzu7hd5yrjj8txfpr2rqnq',
@@ -61,8 +61,8 @@ export default {
         },
         {
           id: 4,
-          title: 'BRONZE 1 [0.25ETH+10K WIT]',
-          img: 'bronze-price',
+          title: this.$t('prizes.bronze_prize_1'),
+          img: 'bronze-prize',
           ethAddress: '0xD2072CeAB5f1454499A8d3Cf60E7cbd9E0F6cDDC',
           ethClaimed: null,
           witAddress: 'wit13c8pctfesnh6prmnyn3q5fjtllqp9qe53ux4pm',
@@ -70,8 +70,8 @@ export default {
         },
         {
           id: 5,
-          title: 'BRONZE 2 [0.25ETH+10K WIT]',
-          img: 'bronze-price',
+          title: this.$t('prizes.bronze_prize_2'),
+          img: 'bronze-prize',
           ethAddress: '0xA4f23588AdDA5aCFF3a9e3B559DCDF4a45C87d1A',
           ethClaimed: null,
           witAddress: 'wit182g9yfrjfrewyjqx84xa202pxwycz7wnznm34t',
@@ -79,8 +79,8 @@ export default {
         },
         {
           id: 6,
-          title: 'BRONZE 3 [0.25ETH+10K WIT]',
-          img: 'bronze-price',
+          title: this.$t('prizes.bronze_prize_3'),
+          img: 'bronze-prize',
           ethAddress: '0x02aC3D540a8f70EA554fdcbD4052D3d3eEFBE657',
           ethClaimed: null,
           witAddress: 'wit190r2tlw3d388l6r8azdsz6mf4ea7kwd6etd9d3',

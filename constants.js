@@ -5,9 +5,9 @@ export const languages = [
     iso: 'en-US',
     isCatchallLocale: true,
   },
-  {
-    name: 'Español',
-    code: 'es',
-    iso: 'es-ES',
-  },
+  // {
+  //   name: 'Español',
+  //   code: 'es',
+  //   iso: 'es-ES',
+  // },
 ]

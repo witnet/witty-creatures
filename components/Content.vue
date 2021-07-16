@@ -8,8 +8,8 @@
         <p class="text">{{ $t('content.anouncements_date_2_text') }}</p>
       </div>
     </Fieldset>
-    <Fieldset :title="$t('content.prices')">
-      <Prices />
+    <Fieldset :title="$t('content.prizes')">
+      <prizes />
     </Fieldset>
     <Fieldset :title="$t('content.how_to_play')">
       <i18n tag="p" path="content.instruction_1" class="text">
@@ -141,7 +141,7 @@
 
 <style lang="scss" scoped>
 .section {
-  margin: 0 auto;
+  margin: 34px auto;
   max-width: 800px;
   justify-items: center;
   display: flex;

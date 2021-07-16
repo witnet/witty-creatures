@@ -1,11 +1,11 @@
 {
   "hero": {
-    "text": "Collect the 12 different crypto cards and earn up to {0} worth of prices!",
+    "text": "Collect the 12 different crypto cards and earn up to {0} worth of prizes!",
     "eth": "5 ETH"
   },
   "content": {
     "announcements": "ANNOUNCEMENTS",
-    "prices": "PRICES",
+    "prizes": "prizeS",
     "how_to_play": "HOW TO PLAY",
     "get_your_first_creatures": "GET YOUR FIRST 3 WITTY CREATURES",
     "get_rest_witty_creatures": "HOW TO GET THE WITTY CREATURES THAT YOU ARE MISSING",
@@ -55,7 +55,7 @@
     "get_rest_witty_creatures_2": "",
     "get_rest_witty_creatures_3": ""
   },
-  "price": {
+  "prize": {
     "eth_unclaimed": "",
     "wit_unclaimed": ""
   }

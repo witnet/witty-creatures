@@ -15,7 +15,7 @@
 .section {
   background: $black;
   padding: 50px 24px;
-  padding-bottom: 8vw;
+  padding-bottom: 10vw;
   display: grid;
   grid-template: max-content max-content/ 1fr;
   justify-items: center;
@@ -40,9 +40,9 @@
     }
   }
 }
-// @media (max-width: 1200px) {
-//   .section {
-//     padding: 0 0;
-//   }
-// }
+@media (max-width: 1200px) {
+  .section {
+    padding-bottom: 20vw;
+  }
+}
 </style>

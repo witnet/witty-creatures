@@ -25,6 +25,15 @@ html {
   background: white;
 }
 
+a {
+  text-decoration: none;
+  color: $black;
+  &:hover,
+  &:active {
+    color: $black;
+  }
+}
+
 html,
 body {
   margin: 0;
