@@ -78,6 +78,7 @@ export default {
   .title {
     font-size: 18px;
     margin-right: 24px;
+    flex-grow: 1;
   }
   .prize-icon {
     margin-right: 16px;
