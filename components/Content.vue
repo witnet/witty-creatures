@@ -130,6 +130,14 @@
         {{ $t('content.what_is_witnet_2') }}
       </p>
     </Fieldset>
+    <aside class="closing">
+      <a href="https://witnet.io" target="_blank"
+        ><img
+          class="closing-logo"
+          src="https://witnet.io/_nuxt/img/witnet_logo.4c8ecb3.svg"
+          alt="Witnet"
+      /></a>
+    </aside>
   </div>
 </template>
 
@@ -162,6 +170,14 @@
   }
   .highlight {
     font-weight: 600;
+  }
+  .closing {
+    text-align: center;
+    margin: 40px 0 60px 0;
+  }
+  .closing-logo {
+    width: 250px;
+    max-width: 80vw;
   }
 }
 @media screen and (max-width: 600px) {
