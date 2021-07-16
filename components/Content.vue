@@ -123,7 +123,7 @@
     <Fieldset :title="$t('content.what_is_witnet')">
       <i18n tag="p" path="content.what_is_witnet_1" class="text">
         <a href="https://witnet.io/" target="_blank" class="highlight">
-          {{ $t('content.what_is_witnet_text_1_0') }}
+          {{ $t('content.what_is_witnet_1_0') }}
         </a>
       </i18n>
       <p class="text">
