@@ -65,10 +65,8 @@
     "bronze_prize_3": "BRONZE 3 [0.25ETH+10K WIT]"
   },
   "prize": {
-    "eth_unclaimed": "ETH: unclaimed",
-    "wit_unclaimed": "WIT: unclaimed",
-    "eth_claimed": "ETH: claimed",
-    "wit_claimed": "WIT: claimed",
+    "eth_unclaimed": "ETH: UP FOR GRABS!",
+    "eth_claimed": "ETH: TAKEN!",
     "checking": "Checking...",
     "check_manually": "WIT: Check in explorer"
   }

@@ -6,7 +6,7 @@
     </h3>
     <a
       class="claimed"
-      :class="{ ['eth-highlight']: ethClaimed }"
+      :class="{ ['eth-highlight']: ethClaimed === false }"
       :href="'https://etherscan.io/address/' + ethAddress"
       target="_blank"
     >
@@ -20,7 +20,7 @@
     </a>
     <a
       class="claimed"
-      :class="{ ['wit-highlight']: witClaimed }"
+      :class="{ ['wit-highlight']: witClaimed === false }"
       :href="'https://witnet.network/search/' + witAddress"
       target="_blank"
     >
@@ -76,19 +76,20 @@ export default {
   border-radius: 4px;
   padding: 20px;
   .title {
-    font-size: 18px;
+    font-size: 17px;
     margin-right: 24px;
     flex-grow: 1;
   }
   .prize-icon {
     margin-right: 16px;
-    height: 1.5em;
+    height: 1.3em;
   }
   .claimed {
     padding: 8px;
     border-radius: 4px;
     background-color: grey;
     color: white;
+    font-size: 15px;
     font-weight: bold;
     margin-right: 10px;
     &:last-of-type {

@@ -102,11 +102,10 @@ export default {
           web3.eth
             .getBalance(prize.ethAddress)
             .then((balance) => {
-              prize.ethClaimed = balance === '0'
+              prize.ethClaimed = parseInt(balance) < 100000000000000000
             })
             .catch(async (e) => {
               // Just to deal with random Web3 failures
-              console.error('Retrying after error', e)
               prize.ethClaimed = await web3.eth.getBalance(prize.ethAddress)
             })
         }
