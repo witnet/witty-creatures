@@ -130,14 +130,27 @@
         {{ $t('content.what_is_witnet_2') }}
       </p>
     </Fieldset>
-    <aside class="closing">
+    <footer class="closing">
       <a href="https://witnet.io" target="_blank"
         ><img
           class="closing-logo"
           src="https://witnet.io/_nuxt/img/witnet_logo.4c8ecb3.svg"
           alt="Witnet"
       /></a>
-    </aside>
+      <p>
+        &copy; 2021 by
+        <a href="https://witnet.foundation" target="_blank"
+          >Witnet Foundation</a
+        >
+        and individual contributors.
+      </p>
+      <p>
+        Creatures design by SailorMichi
+        <a href="https://www.instagram.com/sailormichi/" target="_blank"
+          >[Instagram]</a
+        ><a href="https://opensea.io/sailormichi" target="_blank">[Opensea]</a>
+      </p>
+    </footer>
   </div>
 </template>
 
@@ -178,6 +191,13 @@
   .closing-logo {
     width: 250px;
     max-width: 80vw;
+    margin-bottom: 50px;
+  }
+  .closing > p {
+    font-size: 0.9em;
+  }
+  .closing > p > a {
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 600px) {
