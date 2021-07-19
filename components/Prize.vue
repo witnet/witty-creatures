@@ -1,31 +1,35 @@
 <template>
   <div class="prize">
-    <img class="prize-icon" :src="url" alt="prize" />
-    <h3 class="title">
-      {{ title }}
-    </h3>
-    <a
-      class="claimed"
-      :class="{ ['eth-highlight']: ethClaimed === false }"
-      :href="'https://etherscan.io/address/' + ethAddress"
-      target="_blank"
-    >
-      {{
-        ethClaimed == null
-          ? $t('prize.checking')
-          : ethClaimed
-          ? $t('prize.eth_claimed')
-          : $t('prize.eth_unclaimed')
-      }}
-    </a>
-    <a
-      class="claimed"
-      :class="{ ['wit-highlight']: witClaimed === false }"
-      :href="'https://witnet.network/search/' + witAddress"
-      target="_blank"
-    >
-      {{ $t('prize.check_manually') }}
-    </a>
+    <div class="flex-1">
+      <img class="prize-icon" :src="url" alt="prize" />
+      <h3 class="title">
+        {{ title }}
+      </h3>
+    </div>
+    <div class="flex">
+      <a
+        class="claimed"
+        :class="{ ['eth-highlight']: ethClaimed === false }"
+        :href="'https://etherscan.io/address/' + ethAddress"
+        target="_blank"
+      >
+        {{
+          ethClaimed == null
+            ? $t('prize.checking')
+            : ethClaimed
+            ? $t('prize.eth_claimed')
+            : $t('prize.eth_unclaimed')
+        }}
+      </a>
+      <a
+        class="claimed"
+        :class="{ ['wit-highlight']: witClaimed === false }"
+        :href="'https://witnet.network/search/' + witAddress"
+        target="_blank"
+      >
+        {{ $t('prize.check_manually') }}
+      </a>
+    </div>
   </div>
 </template>
 
@@ -66,15 +70,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 337px;
+}
 .prize {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: flex-start;
   align-items: center;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 20px;
+  justify-content: space-between;
+
   .title {
     font-size: 17px;
     margin-right: 24px;
@@ -118,6 +133,12 @@ export default {
         margin-right: 0;
       }
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .flex-1 {
+    width: initial;
   }
 }
 </style>
